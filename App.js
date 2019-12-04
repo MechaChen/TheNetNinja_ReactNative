@@ -9,12 +9,14 @@ export default function App() {
     <View style={styles.container}>
       <Text>Enter name:</Text>
       <TextInput
+        multiline
         style={styles.input}
         placeholder="e.g. John Doe"
         onChangeText={(val) => setName(val)}
       />
       <Text>Enter Age:</Text>
       <TextInput
+        keyboardType="numeric"
         style={styles.input}
         placeholder="e.g. 99"
         onChangeText={(val) => setAge(val)}
