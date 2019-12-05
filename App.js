@@ -15,6 +15,7 @@ export default function App() {
     return (
         <View style={styles.container}>
             <FlatList
+                numColumns={2}
                 keyExtractor={(item) => item.id}
                 data={people}
                 renderItem={({item}) => (
@@ -38,6 +39,8 @@ const styles = StyleSheet.create({
         marginTop: 24,
         padding: 30,
         backgroundColor: 'pink',
-        fontSize: 24
+        fontSize: 24,
+        marginHorizontal: 10,
+        marginTop: 24
     }
 });
